@@ -1,0 +1,18 @@
+puts "Welcome to my Madlib!"
+puts "Please answer each question to complete the sentence."
+puts "What is your favorite animal?"
+animal = gets.chomp
+puts "Whats is your favorite season?"
+season = gets.chomp
+puts "What is your name?"
+name = gets.chomp
+puts "What is your favorite sport?"
+sport = gets.chomp
+puts "What is your favorite food?"
+food = gets.chomp
+puts "What is your favorite drink?"
+drink = gets.chomp
+
+
+
+puts "I once saw " + "a " + animal + " " + "in " + season + " " + "with " + name + " " + "playing " + sport + " " + "eating " + food + " " + "and drinking " + drink + "!"
