@@ -1,0 +1,23 @@
+x = "hello" #Simple example of how method works
+y = "bye bye"
+
+def greeting (saying) #Think of the "saying" argument as variable, 1st method example
+  saying
+end
+
+puts greeting(x)
+puts greeting(y)
+puts greeting(x + y)
+puts greeting("hola")
+
+puts
+
+saying = "Hello"
+name = "Zack"
+
+def convo (saying, name) #2nd method example
+  return saying + ", " + name
+end
+
+puts convo(saying, name)
+puts convo("Hola", "Kim")
