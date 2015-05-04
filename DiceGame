@@ -1,0 +1,26 @@
+def dice
+	dice1 = [1,2,3,4,5,6]
+  dice2 = [1,2,3,4,5,6]
+	
+	roll1 = dice1.sample
+	roll2 = dice2.sample
+	result = [roll1, roll2]
+end
+
+first_roll = dice
+puts "You rolled" + first_roll.inspect
+
+second_roll = dice
+puts "You also rolled" + second_roll.inspect
+puts
+
+first_roll_total = first_roll [0] + first_roll [1]
+second_roll_total = second_roll [0] + second_roll [1]
+
+if first_roll_total > second_roll_total
+	puts "First roll wins with a total of " + first_roll_total.to_s + " compared to " + second_roll_total.to_s
+elsif first_roll_total == second_roll_total
+	puts "Tie with both rolls of " + first_roll_total.to_s
+else 
+	puts "Second roll wins with a total of " + second_roll_total.to_s + " compared to " + first_roll_total.to_s
+end
