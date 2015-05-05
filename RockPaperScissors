@@ -1,0 +1,44 @@
+@user_wins = 0
+@computer_wins = 0
+
+def rps
+	
+  puts "Please choose rock, paper, or scissors"
+  @choose = gets.chomp.downcase
+	
+	choices = ["rock", "paper", "scissors"]
+	computer = choices.sample
+	puts "The computer chose #{computer}"
+	
+	if @choose == "rock" && computer == "paper"
+		puts "You lose"
+		@computer_wins += 1
+	elsif @choose == "rock" && computer == "scissors"
+	puts "You win"
+		@user_wins += 1
+	elsif @choose == "paper" && computer == "rock"
+	puts "You win"
+		@user_wins += 1
+	elsif @choose == "paper" && computer == "scissors"
+	puts "You lose"
+		@computer_wins += 1
+	elsif @choose == "scissors" && computer == "rock"
+	puts "You lose"
+		@computer_wins +=1
+	elsif @choose == "scissors" && computer == "paper"
+	puts "You win"
+		@user_wins += 1
+	else 
+	puts "Draw!"
+	end
+end 
+
+puts "Welcome to Rock, Paper, Scissors"
+
+until @user_wins == 5 || @computer_wins == 5
+	program = rps
+  puts "User has #{@user_wins} and the computer has #{@computer_wins}"
+  if @user_wins == 5 || @computer_wins == 5
+	puts "Game Over"
+	end
+end
